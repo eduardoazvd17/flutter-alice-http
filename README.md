@@ -126,14 +126,6 @@ Alice alice = Alice(..., darkTheme: true);
 ```
 
 ### HTTP Client configuration
-If you're using Dio, you just need to add interceptor.
-
-```dart
-Dio dio = Dio();
-dio.interceptors.add(alice.getDioInterceptor());
-```
-
-
 If you're using HttpClient from dart:io package:
 
 ```dart
@@ -153,14 +145,6 @@ If you're using http from http/http package:
 http.get('https://jsonplaceholder.typicode.com/posts').then((response) {
     alice.onHttpResponse(response);
 });
-```
-
-If you're using Chopper. you need to add interceptor:
-
-```dart
-chopper = ChopperClient(
-    interceptors: alice.getChopperInterceptor(),
-);
 ```
 
 If you have other HTTP client you can use generic http call interface:
