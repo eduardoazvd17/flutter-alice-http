@@ -2,10 +2,10 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_alice/core/alice_core.dart';
-import 'package:flutter_alice/core/alice_http_adapter.dart';
-import 'package:flutter_alice/core/alice_http_client_adapter.dart';
-import 'package:flutter_alice/model/alice_http_call.dart';
+import 'package:flutter_alice_http/core/alice_core.dart';
+import 'package:flutter_alice_http/core/alice_http_adapter.dart';
+import 'package:flutter_alice_http/core/alice_http_client_adapter.dart';
+import 'package:flutter_alice_http/model/alice_http_call.dart';
 import 'package:http/http.dart' as http;
 
 class Alice {

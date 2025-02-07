@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_alice/model/alice_http_call.dart';
-import 'package:flutter_alice/ui/widget/alice_base_call_details_widget.dart';
+import 'package:flutter_alice_http/model/alice_http_call.dart';
+import 'package:flutter_alice_http/ui/widget/alice_base_call_details_widget.dart';
 
 class AliceCallResponseWidget extends StatefulWidget {
   final AliceHttpCall call;

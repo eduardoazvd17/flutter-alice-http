@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_alice/helper/alice_conversion_helper.dart';
-import 'package:flutter_alice/model/alice_http_call.dart';
-import 'package:flutter_alice/model/alice_http_response.dart';
-import 'package:flutter_alice/ui/utils/alice_constants.dart';
+import 'package:flutter_alice_http/helper/alice_conversion_helper.dart';
+import 'package:flutter_alice_http/model/alice_http_call.dart';
+import 'package:flutter_alice_http/model/alice_http_response.dart';
+import 'package:flutter_alice_http/ui/utils/alice_constants.dart';
 
 class AliceCallListItemWidget extends StatelessWidget {
   final AliceHttpCall call;

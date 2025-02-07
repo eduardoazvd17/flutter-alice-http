@@ -1,8 +1,8 @@
-# Alice <img src="https://raw.githubusercontent.com/hautvfami/flutter-alice/main/media/logo.png" width="25px">
+# Alice <img src="https://raw.githubusercontent.com/eduardoazvd17/flutter-alice-http/main/media/logo.png" width="25px">
 
-[![pub package](https://img.shields.io/pub/v/flutter_alice.svg)](https://pub.dev/packages/flutter_alice)
-[![pub package](https://img.shields.io/github/license/hautvfami/flutter-alice.svg?style=flat)](https://github.com/hautvfami/flutter-alice)
-[![pub package](https://img.shields.io/badge/platform-flutter-blue.svg)](https://github.com/hautvfami/flutter-alice)
+[![pub package](https://img.shields.io/pub/v/flutter_alice_http.svg)](https://pub.dev/packages/flutter_alice_http)
+[![pub package](https://img.shields.io/github/license/eduardoazvd17/flutter-alice-http.svg?style=flat)](https://github.com/eduardoazvd17/flutter-alice-http)
+[![pub package](https://img.shields.io/badge/platform-flutter-blue.svg)](https://github.com/eduardoazvd17/flutter-alice-http)
 
 Alice is an HTTP Inspector tool for Flutter which helps debugging http requests. 
 It catches and stores http requests and responses, which can be viewed via simple UI. 
@@ -14,42 +14,42 @@ Overlay bubble version of Alice: https://github.com/jhomlala/alice
 <table>
   <tr>
     <td>
-		<img width="250px" src="https://raw.githubusercontent.com/hautvfami/flutter-alice/main/media/1.png">
+		<img width="250px" src="https://raw.githubusercontent.com/eduardoazvd17/flutter-alice-http/main/media/1.png">
     </td>
     <td>
-       <img width="250px" src="https://raw.githubusercontent.com/hautvfami/flutter-alice/main/media/2.png">
+       <img width="250px" src="https://raw.githubusercontent.com/eduardoazvd17/flutter-alice-http/main/media/2.png">
     </td>
     <td>
-       <img width="250px" src="https://raw.githubusercontent.com/hautvfami/flutter-alice/main/media/3.png">
+       <img width="250px" src="https://raw.githubusercontent.com/eduardoazvd17/flutter-alice-http/main/media/3.png">
     </td>
     <td>
-       <img width="250px" src="https://raw.githubusercontent.com/hautvfami/flutter-alice/main/media/4.png">
+       <img width="250px" src="https://raw.githubusercontent.com/eduardoazvd17/flutter-alice-http/main/media/4.png">
     </td>
      <td>
-       <img width="250px" src="https://raw.githubusercontent.com/hautvfami/flutter-alice/main/media/5.png">
+       <img width="250px" src="https://raw.githubusercontent.com/eduardoazvd17/flutter-alice-http/main/media/5.png">
     </td>
     <td>
-       <img width="250px" src="https://raw.githubusercontent.com/hautvfami/flutter-alice/main/media/6.png">
+       <img width="250px" src="https://raw.githubusercontent.com/eduardoazvd17/flutter-alice-http/main/media/6.png">
     </td>
   </tr>
   <tr>
     <td>
-	<img width="250px" src="https://raw.githubusercontent.com/hautvfami/flutter-alice/main/media/7.png">
+	<img width="250px" src="https://raw.githubusercontent.com/eduardoazvd17/flutter-alice-http/main/media/7.png">
     </td>
     <td>
-       <img width="250px" src="https://raw.githubusercontent.com/hautvfami/flutter-alice/main/media/8.png">
+       <img width="250px" src="https://raw.githubusercontent.com/eduardoazvd17/flutter-alice-http/main/media/8.png">
     </td>
     <td>
-       <img width="250px" src="https://raw.githubusercontent.com/hautvfami/flutter-alice/main/media/9.png">
+       <img width="250px" src="https://raw.githubusercontent.com/eduardoazvd17/flutter-alice-http/main/media/9.png">
     </td>
     <td>
-       <img width="250px" src="https://raw.githubusercontent.com/hautvfami/flutter-alice/main/media/10.png">
+       <img width="250px" src="https://raw.githubusercontent.com/eduardoazvd17/flutter-alice-http/main/media/10.png">
     </td>
     <td>
-       <img width="250px" src="https://raw.githubusercontent.com/hautvfami/flutter-alice/main/media/11.png">
+       <img width="250px" src="https://raw.githubusercontent.com/eduardoazvd17/flutter-alice-http/main/media/11.png">
     </td>
      <td>
-       <img width="250px" src="https://raw.githubusercontent.com/hautvfami/flutter-alice/main/media/12.png">
+       <img width="250px" src="https://raw.githubusercontent.com/eduardoazvd17/flutter-alice-http/main/media/12.png">
     </td>
   </tr>
 
@@ -57,10 +57,8 @@ Overlay bubble version of Alice: https://github.com/jhomlala/alice
 
 **Supported Dart http client plugins:**
 
-- Dio
 - HttpClient from dart:io package
 - Http from http/http package
-- Chopper
 - Generic HTTP client
 
 **Features:**  
@@ -78,7 +76,7 @@ Overlay bubble version of Alice: https://github.com/jhomlala/alice
 
 ```yaml
 dependencies:
-  flutter_alice: ^1.0.1
+  flutter_alice_http: ^1.0.1
 ```
 
 2. Install it
@@ -90,7 +88,7 @@ $ flutter pub get
 3. Import it
 
 ```dart
-import 'package:flutter_alice/alice.dart';
+import 'package:flutter_alice_http_http/alice.dart';
 ```
 
 ## Usage
@@ -176,8 +174,8 @@ You can use extensions to shorten your http and http client code. This is option
 Example:
 1. Import:
 ```dart
-import 'package:flutter_alice/core/alice_http_client_extensions.dart';
-import 'package:flutter_alice/core/alice_http_extensions.dart';
+import 'package:flutter_alice_http_http/core/alice_http_client_extensions.dart';
+import 'package:flutter_alice_http_http/core/alice_http_extensions.dart';
 ```
 
 2. Use extensions:

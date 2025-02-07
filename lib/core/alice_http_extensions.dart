@@ -1,4 +1,4 @@
-import 'package:flutter_alice/alice.dart';
+import 'package:flutter_alice_http/alice.dart';
 import 'package:http/http.dart';
 
 extension AliceHttpExtensions on Future<Response> {

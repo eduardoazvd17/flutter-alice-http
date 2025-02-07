@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_alice/core/alice_core.dart';
-import 'package:flutter_alice/helper/alice_alert_helper.dart';
-import 'package:flutter_alice/model/alice_http_call.dart';
-import 'package:flutter_alice/model/alice_menu_item.dart';
-import 'package:flutter_alice/ui/page/alice_call_details_screen.dart';
-import 'package:flutter_alice/ui/utils/alice_constants.dart';
-import 'package:flutter_alice/ui/widget/alice_call_list_item_widget.dart';
+import 'package:flutter_alice_http/core/alice_core.dart';
+import 'package:flutter_alice_http/helper/alice_alert_helper.dart';
+import 'package:flutter_alice_http/model/alice_http_call.dart';
+import 'package:flutter_alice_http/model/alice_menu_item.dart';
+import 'package:flutter_alice_http/ui/page/alice_call_details_screen.dart';
+import 'package:flutter_alice_http/ui/utils/alice_constants.dart';
+import 'package:flutter_alice_http/ui/widget/alice_call_list_item_widget.dart';
 
 import 'alice_stats_screen.dart';
 

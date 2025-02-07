@@ -1,8 +1,8 @@
 import 'dart:convert';
 
-import 'package:flutter_alice/helper/alice_conversion_helper.dart';
-import 'package:flutter_alice/model/alice_http_call.dart';
-import 'package:flutter_alice/ui/utils/alice_parser.dart';
+import 'package:flutter_alice_http/helper/alice_conversion_helper.dart';
+import 'package:flutter_alice_http/model/alice_http_call.dart';
+import 'package:flutter_alice_http/ui/utils/alice_parser.dart';
 
 class AliceSaveHelper {
   static JsonEncoder _encoder = new JsonEncoder.withIndent('  ');
