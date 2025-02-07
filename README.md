@@ -88,7 +88,7 @@ $ flutter pub get
 3. Import it
 
 ```dart
-import 'package:flutter_alice_http_http/alice.dart';
+import 'package:flutter_alice_http/alice.dart';
 ```
 
 ## Usage
@@ -174,8 +174,8 @@ You can use extensions to shorten your http and http client code. This is option
 Example:
 1. Import:
 ```dart
-import 'package:flutter_alice_http_http/core/alice_http_client_extensions.dart';
-import 'package:flutter_alice_http_http/core/alice_http_extensions.dart';
+import 'package:flutter_alice_http/core/alice_http_client_extensions.dart';
+import 'package:flutter_alice_http/core/alice_http_extensions.dart';
 ```
 
 2. Use extensions:
