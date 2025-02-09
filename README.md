@@ -76,7 +76,7 @@ Overlay bubble version of Alice: https://github.com/jhomlala/alice
 
 ```yaml
 dependencies:
-  flutter_alice_http: ^1.0.1
+  flutter_alice_http: ^2.0.1
 ```
 
 2. Install it
