@@ -1,12 +1,10 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_alice_http/core/debug_pop_up.dart';
 import 'package:flutter_alice_http/model/alice_http_call.dart';
 import 'package:flutter_alice_http/model/alice_http_error.dart';
 import 'package:flutter_alice_http/model/alice_http_response.dart';
 import 'package:flutter_alice_http/ui/page/alice_calls_list_screen.dart';
-import 'package:overlay_support/overlay_support.dart';
 import 'package:rxdart/rxdart.dart';
 
 class AliceCore {
@@ -168,7 +166,6 @@ class AliceCore {
   Future _showLocalNotification() async {
     _notificationProcessing = true;
     String? message = _notificationMessage;
-    showDebugAnimNotification();
     _notificationMessageShown = message;
     _notificationProcessing = false;
     return;
@@ -222,31 +219,6 @@ class AliceCore {
 
   AliceHttpCall? _selectCall(int requestId) =>
       callsSubject.value.firstWhereOrNull((call) => call.id == requestId);
-
-  bool isShowedBubble = false;
-
-  void showDebugAnimNotification() {
-    if (isShowedBubble) {
-      return;
-    }
-    var context = getContext();
-    if (context == null) {
-      return;
-    }
-    isShowedBubble = true;
-    showOverlay((context, t) {
-      return Opacity(
-        opacity: t,
-        child: DebugPopUp(
-          callsSubscription: callsSubject.stream,
-          onClicked: () {
-            navigateToCallListScreen();
-          },
-          aliceCore: this,
-        ),
-      );
-    }, duration: Duration.zero);
-  }
 }
 
 extension IterableExtension<T> on Iterable<T> {
