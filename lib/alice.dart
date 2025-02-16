@@ -70,8 +70,16 @@ class Alice {
   }
 
   /// Handle both request and response from http package
-  void onHttpResponse(http.Response response, {dynamic body}) {
-    _httpAdapter.onResponse(response, body: body);
+  void onHttpResponse(
+    http.Response response, {
+    dynamic body,
+    Duration? callDuration,
+  }) {
+    _httpAdapter.onResponse(
+      response,
+      body: body,
+      callDuration: callDuration,
+    );
   }
 
   /// Opens Http calls inspector. This will navigate user to the new fullscreen
