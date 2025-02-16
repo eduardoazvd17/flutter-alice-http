@@ -14,7 +14,11 @@ class AliceHttpAdapter {
   AliceHttpAdapter(this.aliceCore);
 
   /// Handles http response. It creates both request and response from http call
-  void onResponse(http.Response response, {dynamic body}) {
+  void onResponse(
+    http.Response response, {
+    dynamic body,
+    Duration? callDuration,
+  }) {
     if (response.request == null) {
       return;
     }
@@ -78,7 +82,7 @@ class AliceHttpAdapter {
     call.response = httpResponse;
 
     call.loading = false;
-    call.duration = 0;
+    call.duration = callDuration?.inMilliseconds ?? 0;
     aliceCore.addCall(call);
   }
 }
